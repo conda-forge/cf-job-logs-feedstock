@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.13"
-  version: "0.1.2"
+  version: "0.2.0"
 
 package:
   name: cf-job-logs
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/cf-job-logs/cf_job_logs-${{ version }}.tar.gz
-  sha256: a518015b48047009d9e429d7c39830fa6c72209d3cba3ec418d3178d5d7be07f
+  sha256: edc483c05fa68e457a18c977c6c3da9cd643a1b9944d740ebe15e1ae61887c34
 
 build:
   number: 0
