@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.13"
-  version: "0.2.0"
+  version: "0.3.0"
 
 package:
   name: cf-job-logs
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/cf-job-logs/cf_job_logs-${{ version }}.tar.gz
-  sha256: edc483c05fa68e457a18c977c6c3da9cd643a1b9944d740ebe15e1ae61887c34
+  sha256: d78104549de7cc91939bd16d748b968a87723fa83a3e1c504d7bada0434319df
 
 build:
   number: 0
@@ -23,10 +23,8 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - setuptools
-    - setuptools-scm
-    - wheel
     - pip
+    - hatchling
   run:
     - python >=${{ python_min }}
     - click >=8.0.0,<9
