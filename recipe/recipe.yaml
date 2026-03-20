@@ -26,10 +26,6 @@ requirements:
     - setuptools
     - setuptools-scm
     - wheel
-host:
-- python ${{ python_min }}.*
-- pip
-- hatchling
   run:
     - python >=${{ python_min }}
     - click >=8.0.0,<9
